@@ -35,6 +35,7 @@ class ReadThreadsTest extends TestCase
             ->assertSee($this->thread->title);
     }
 
+    /** @test */
     public function a_user_can_read_replies_that_are_associated_with_a_thread()
     {
         $reply = factory(Reply::class)

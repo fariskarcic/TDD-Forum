@@ -11,7 +11,13 @@
                         {{$thread->body}}
                     </div>
                 </div>
-
+                @foreach($thread->replies as $reply)
+                    <div class="card">
+                        <div class="card-body">
+                            {{$reply->body}}
+                        </div>
+                    </div>
+                @endforeach
             </div>
         </div>
     </div>
